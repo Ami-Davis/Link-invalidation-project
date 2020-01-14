@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fc912e4-a072-4c50-a074-cfe57771e8de" name="Default Changelist" comment="" />
+    <list default="true" id="2fc912e4-a072-4c50-a074-cfe57771e8de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>http://oaei.ontologymatching.org/2010/IIMBDATA/en/kazakhstan</find>
+      <find>path</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1W1VMfbArZ9Bd0rMSSITXw3Y99J" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -30,25 +53,54 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2fc912e4-a072-4c50-a074-cfe57771e8de" name="Default Changelist" comment="" />
-      <created>1578317041891</created>
+      <changelist id="41ccde03-b025-4e7c-b53c-c404880ea390" name="Default Changelist" comment="" />
+      <created>1578317124588</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1578317041891</updated>
+      <updated>1578317124588</updated>
     </task>
+    <task id="LOCAL-00001" summary="Test">
+      <created>1578929111281</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578929111281</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <created>1578931890456</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578931890456</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first commit">
+      <created>1578932065819</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578932065819</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add reading data from owl and also from refalign(xml).">
+      <created>1579013302148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579013302148</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add reading data from owl and also from refalign(xml).">
+      <created>1579013779555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579013779555</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test" />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="add reading data from owl and also from refalign(xml)." />
+    <option name="LAST_COMMIT_MESSAGE" value="add reading data from owl and also from refalign(xml)." />
   </component>
 </project>

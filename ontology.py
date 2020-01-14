@@ -1,12 +1,17 @@
+
 import rdflib as rdf
 
 
 class Ontology:
+    '''
+
+    This class is building rdf graph for each ontology. Can use them using: a = Ontology(path) and use the ontology: a.onto
+
+    '''
 
     def __init__(self, path):
 
         self.onto = rdf.Graph().parse(source=path, format='xml')
-        self.functional_properties = []
 
     def __len__(self):
         return len(self.onto)
@@ -33,9 +38,6 @@ class Ontology:
         return list(set(objsList))
 
 
-if __name__ == "__main__":
 
-    g = Ontology("data/000/onto.owl")
-    subjList = g.uniqueSubjects()
-    print(len(subjList))
+
 
