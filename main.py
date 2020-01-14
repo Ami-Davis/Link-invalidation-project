@@ -1,0 +1,36 @@
+import pandas as pd
+
+from ontology import Ontology
+from refalign import transformRefToTsv, addErrorToRefAlign
+
+if __name__ == '__main__':
+
+    refalignrdfToTsv = True
+
+    source = Ontology("data/000/onto.owl")
+    target = Ontology("data/001/onto.owl")
+    subjList = source.uniqueSubjects()
+
+    if refalignrdfToTsv:
+        transformRefToTsv("data/refalign.rdf")
+
+    refalign = pd.read_csv('data/transformed_refalign.tsv', sep='\t')
+
+    print(refalign.head())
+
+    newRefalign = addErrorToRefAlign(source.onto,target.onto,refalign,threshhold=0.5)
+
+
+
+    '''
+    some test about how deal with triples that come from class Ontology:
+    '''
+    iter=0
+    for i,j,k in source.onto:
+        print('subject: ', i)
+        print('property: ', j)
+        print('object: ', k)
+        print()
+        iter+=1
+        if iter==10:
+            break
