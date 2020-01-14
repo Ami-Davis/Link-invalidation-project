@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41ccde03-b025-4e7c-b53c-c404880ea390" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refalign.py" afterDir="false" />
+    <list default="true" id="41ccde03-b025-4e7c-b53c-c404880ea390" name="Default Changelist" comment="add reading data from owl and also from refalign(xml).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ontology.py" beforeDir="false" afterPath="$PROJECT_DIR$/ontology.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +77,9 @@
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -151,12 +151,25 @@
       <option name="project" value="LOCAL" />
       <updated>1578932065819</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add reading data from owl and also from refalign(xml).">
+      <created>1579013302148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579013302148</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add reading data from owl and also from refalign(xml).">
+      <created>1579013779555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579013779555</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="966" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -169,8 +182,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32951945" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49909583" visible="true" weight="0.22883295" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50090414" side_tool="true" weight="0.96567506" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49849308" visible="true" weight="0.22883295" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015069" side_tool="true" visible="true" weight="0.22883295" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4996986" weight="0.32951945" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -199,7 +212,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="add reading data from owl and also from refalign(xml)." />
+    <option name="LAST_COMMIT_MESSAGE" value="add reading data from owl and also from refalign(xml)." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/load.py">
