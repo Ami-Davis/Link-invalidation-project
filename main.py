@@ -16,15 +16,16 @@ if __name__ == '__main__':
 
     refalign = pd.read_csv('data/transformed_refalign.tsv', sep='\t')
 
-    print(refalign.head())
+    print('Number of refalign before adding errors: ',refalign.shape[0])
 
     newRefalign = addErrorToRefAlign(source.onto,target.onto,refalign,threshhold=0.5)
 
+    print('Number of refalign after adding errors: ',newRefalign.shape[0])
 
 
     '''
     some test about how deal with triples that come from class Ontology:
-    '''
+
     iter=0
     for i,j,k in source.onto:
         print('subject: ', i)
@@ -34,3 +35,4 @@ if __name__ == '__main__':
         iter+=1
         if iter==10:
             break
+    '''
