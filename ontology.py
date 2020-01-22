@@ -30,6 +30,7 @@ class Ontology:
             propsList.append(prop)
         return list(set(propsList))
 
+
     def uniqueObjects(self):
         objsList = []
         objs = self.onto.objects()
