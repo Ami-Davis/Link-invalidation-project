@@ -15,16 +15,31 @@ def jaccard(a,b):
     return textdistance(tokens_1, tokens_2)
 
 def changeMonth(s):
-
+    switcher = {
+        "January": "01",
+        "February": "02",
+        "March": "03",
+        "April": "04",
+        "May": "05",
+        "Juin": "06",
+        "July": "07",
+        "August": "08",
+        "September": "09",
+        "October": "10",
+        "November": "11",
+        "December": "12"
+        }
+    return switcher.get(s)
 
 def changeBirthDate(a):
     #May 26, 1913
-    t = a.split()
+    # 1930 - 04 - 18
+    t = a.replace(",","").split()
+    t[0] = changeMonth(t[0])
+    res = t[2]+"-"+t[0]+"-"+t[1]
+    return res
 
-    print(t)
-
-changeBirthDate("May 26, 1913")
-
-
+date = changeBirthDate("May 26, 1913")
+print(date)
 
 
