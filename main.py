@@ -3,7 +3,7 @@ from ontology import Ontology
 from measures import changeBirthDate
 from measures import changeGender
 from measures import changeReligion
-#from measures import compare
+from measures import compare
 
 
 if __name__ == '__main__':
@@ -23,4 +23,4 @@ if __name__ == '__main__':
         if iter==1:
             break
 
-    #compare(source.onto, target.onto)
+    compare(source.onto, target.onto)
