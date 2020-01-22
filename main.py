@@ -3,6 +3,8 @@ import pandas as pd
 from ontology import Ontology
 from refalign import transformRefToTsv, addErrorToRefAlign
 
+import textdistance
+
 if __name__ == '__main__':
 
     refalignrdfToTsv = True
@@ -23,16 +25,16 @@ if __name__ == '__main__':
     print('Number of refalign after adding errors: ',newRefalign.shape[0])
 
 
-    '''
-    some test about how deal with triples that come from class Ontology:
+ 
+    #some test about how deal with triples that come from class Ontology:
 
     iter=0
     for i,j,k in source.onto:
         print('subject: ', i)
         print('property: ', j)
         print('object: ', k)
-        print()
+
         iter+=1
         if iter==10:
             break
-    '''
+
