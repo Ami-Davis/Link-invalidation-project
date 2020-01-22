@@ -1,7 +1,9 @@
 import pandas as pd
-
+import rdflib as rdf
 from ontology import Ontology
 from refalign import transformRefToTsv, addErrorToRefAlign
+
+TYPE = rdf.URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
 
 if __name__ == '__main__':
 
@@ -11,6 +13,7 @@ if __name__ == '__main__':
     target = Ontology("data/001/onto.owl")
     subjList = source.uniqueSubjects()
 
+    """
     if refalignrdfToTsv:
         transformRefToTsv("data/refalign.rdf")
 
@@ -23,16 +26,14 @@ if __name__ == '__main__':
     print('Number of refalign after adding errors: ',newRefalign.shape[0])
 
 
-    '''
-    some test about how deal with triples that come from class Ontology:
-
-    iter=0
-    for i,j,k in source.onto:
-        print('subject: ', i)
-        print('property: ', j)
-        print('object: ', k)
+    """
+    # some test about how deal with triples that come from class Ontology:
+    s = source.rdfToDict()
+    iter = 0
+    for keys, values in s.items():
+        print(keys)
+        print(values)
         print()
-        iter+=1
+        iter += 1
         if iter==10:
             break
-    '''
