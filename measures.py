@@ -112,3 +112,5 @@ def compare(ont1, ont2):
                 if o.strip() == oo.strip():
                     print("r---------")
 '''
+
+
