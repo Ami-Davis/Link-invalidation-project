@@ -21,7 +21,7 @@ def changeMonth(month):
         "March": "03",
         "April": "04",
         "May": "05",
-        "Juin": "06",
+        "June": "06",
         "July": "07",
         "August": "08",
         "September": "09",
@@ -46,9 +46,8 @@ def changeBirthDate(a):
     # 1930 - 04 - 18
     t = a.replace(",","").split()
     t[0] = changeMonth(t[0])
-    res = a
+    res = ""
     if len(t) == 3:
-        res = ""
         res = t[2]+"-"+t[0]+"-"+t[1]
     return res
 

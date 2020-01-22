@@ -51,8 +51,13 @@ if __name__ == '__main__':
                 print("oo before", oo)
                 oo = changeBirthDate(oo)
                 print("oo after", oo)
-                print("p is", o)
+                print("o is", o)
                 if o == oo:
                     print("----------")
+                    break
+
+
+
+
 
 
