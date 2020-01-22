@@ -3,6 +3,9 @@ import pandas as pd
 from ontology import Ontology
 from refalign import transformRefToTsv, addErrorToRefAlign
 from measures import changeBirthDate
+from measures import changeGender
+from measures import changeReligion
+from measures import compare
 import textdistance
 
 if __name__ == '__main__':
@@ -38,26 +41,6 @@ if __name__ == '__main__':
         if iter==10:
             break
 
-    for s, p, o in source.onto:
-        for ss, pp, oo in target.onto:
-            #print('subject: ', s)
-            #print('property: ', p)
-            #print('object: ', o)
-            #print('subject: ', ss)
-            #print('property: ', pp)
-            #print('object: ', oo)
-
-            if "date_of_birth" in p and "date_of_birth" in pp:
-                print("oo before", oo)
-                oo = changeBirthDate(oo)
-                print("oo after", oo)
-                print("o is", o)
-                if o == oo:
-                    print("----------")
-                    break
-
-
-
-
+    compare(source.onto, target.onto)
 
 

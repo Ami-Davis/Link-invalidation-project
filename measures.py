@@ -32,6 +32,7 @@ def changeMonth(month):
     return switcher.get(month)
 
 def changeGender(gender):
+    gender = gender.strip()
     switcher = {
         "F": "Female",
         "M": "Male"
@@ -51,12 +52,36 @@ def changeBirthDate(a):
         res = t[2]+"-"+t[0]+"-"+t[1]
     return res
 
-def religion(religion):
+def changeReligion(religion):
     return religion.replace(" ","")
 
-rel = religion("Roman Cha t o l ")
+rel = changeReligion("Roman Cha t o l ")
 print(rel)
 
 date = changeBirthDate("May 26, 1913")
 print(date)
 
+
+def compare(ont1, ont2):
+    output = []
+    for s, p, o in ont1:
+        for ss, pp, oo in ont2:
+            if "date_of_birth" in p and "date_of_birth" in pp:
+                #print("oo before", oo)
+                oo = changeBirthDate(oo)
+                #print("oo after", oo)
+                #print("o is", o)
+                if o.strip() == oo.strip():
+                    print("d---------")
+                    output.append((s,ss))
+    print(output)
+            if "gender" in p and "gender" in pp:
+                oo = changeGender(oo)
+                if o.strip() == oo.strip():
+                    print("g---------")
+
+            if "religion" in p and "religion" in pp:
+                oo = changeReligion(oo)
+                o = changeReligion(o)
+                if o.strip() == oo.strip():
+                    print("r---------")
