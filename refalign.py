@@ -38,6 +38,8 @@ def addErrorToRefAlign(source, target, refalign, threshhold=0.8):
     We should randomly add errors.
     '''
 
+    refalign['correct'] = 1
+
     refSize = refalign.shape[0]
     AddErrorCount = int(refSize*threshhold)
     result = pd.DataFrame()
@@ -58,6 +60,7 @@ def addErrorToRefAlign(source, target, refalign, threshhold=0.8):
         if counter == AddErrorCount:
             result['source'] = wrongSource
             result['target'] = wrongTarget
+            result['correct'] = 0
             result = pd.concat([refalign,result])
 
             result.to_csv('data/refalign_addedWorng.tsv',sep='\t', index=False)
