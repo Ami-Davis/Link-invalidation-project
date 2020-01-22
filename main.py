@@ -1,4 +1,4 @@
-import pandas as pd
+
 
 from ontology import Ontology
 from refalign import transformRefToTsv, addErrorToRefAlign
@@ -6,7 +6,7 @@ from measures import changeBirthDate
 from measures import changeGender
 from measures import changeReligion
 from measures import compare
-import textdistance
+
 
 if __name__ == '__main__':
 
@@ -16,31 +16,16 @@ if __name__ == '__main__':
     target = Ontology("data/001/onto.owl")
     subjList = source.uniqueSubjects()
 
-    if refalignrdfToTsv:
-        transformRefToTsv("data/refalign.rdf")
-
-    refalign = pd.read_csv('data/transformed_refalign.tsv', sep='\t')
-
-    print('Number of refalign before adding errors: ',refalign.shape[0])
-
-    newRefalign = addErrorToRefAlign(source.onto,target.onto,refalign,threshhold=0.5)
-
-    print('Number of refalign after adding errors: ',newRefalign.shape[0])
-
-
- 
     #some test about how deal with triples that come from class Ontology:
 
     iter=0
     for i,j,k in source.onto:
-        print('subject: ', i)
-        print('property: ', j)
-        print('object: ', k)
-
+        print(source.uniqueProps())
+        print(len(source.uniqueProps()))
         iter+=1
-        if iter==10:
+        if iter==1:
             break
 
-    compare(source.onto, target.onto)
+    #compare(source.onto, target.onto)
 
 

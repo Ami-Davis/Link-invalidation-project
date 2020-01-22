@@ -61,7 +61,33 @@ print(rel)
 date = changeBirthDate("May 26, 1913")
 print(date)
 
+def compare_Birthdate(l1, l2):
+    l2[0] = changeBirthDate(l2[0])
+    if l1[0].strip() == l2[0].strip():
+        return True
+    return False
 
+def compare_Gender(l1, l2):
+    l2[0] = changeGender(l2[0])
+    if l1[0].strip() == l2[0].strip():
+        return True
+    return False
+
+def comapare_Religion(l1, l2):
+    l2[0] = changeReligion(l2[0])
+    l1[0] = changeReligion(l1[0])
+    if l1[0].strip() == l2[0].strip():
+            return True
+    return False
+
+def compare_ActedBy(l1,l2):
+    if len(l1) == len(l2):
+        return True
+    return False
+
+print(compare_ActedBy([12,32,3],["aa",3,3]))
+
+'''
 def compare(ont1, ont2):
     output = []
     for s, p, o in ont1:
@@ -74,7 +100,7 @@ def compare(ont1, ont2):
                 if o.strip() == oo.strip():
                     print("d---------")
                     output.append((s,ss))
-    print(output)
+
             if "gender" in p and "gender" in pp:
                 oo = changeGender(oo)
                 if o.strip() == oo.strip():
@@ -85,3 +111,4 @@ def compare(ont1, ont2):
                 o = changeReligion(o)
                 if o.strip() == oo.strip():
                     print("r---------")
+'''
