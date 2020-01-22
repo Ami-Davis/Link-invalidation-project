@@ -1,11 +1,9 @@
 
-
 from ontology import Ontology
-from refalign import transformRefToTsv, addErrorToRefAlign
 from measures import changeBirthDate
 from measures import changeGender
 from measures import changeReligion
-from measures import compare
+#from measures import compare
 
 
 if __name__ == '__main__':
@@ -15,7 +13,6 @@ if __name__ == '__main__':
     source = Ontology("data/000/onto.owl")
     target = Ontology("data/001/onto.owl")
     subjList = source.uniqueSubjects()
-
     #some test about how deal with triples that come from class Ontology:
 
     iter=0
@@ -27,5 +24,3 @@ if __name__ == '__main__':
             break
 
     #compare(source.onto, target.onto)
-
-
