@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41ccde03-b025-4e7c-b53c-c404880ea390" name="Default Changelist" comment="add reading data from owl and also from refalign(xml).">
-      <change beforePath="$PROJECT_DIR$/.idea/Link_invalidation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Link_invalidation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/measures.py" beforeDir="false" afterPath="$PROJECT_DIR$/measures.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578317124588</updated>
-      <workItem from="1579683284281" duration="12844000" />
+      <workItem from="1579683284281" duration="13296000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1578929111281</created>
