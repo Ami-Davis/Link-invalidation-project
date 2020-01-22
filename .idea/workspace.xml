@@ -41,8 +41,26 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-<<<<<<< Updated upstream
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+>>>>>>> 08dd090c4ec334ea89657b33cb5c8f27d5f4a327
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\PycharmProjects\Link-invalidation-project\.idea" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
 =======
@@ -62,11 +80,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-<<<<<<< Updated upstream
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-=======
->>>>>>> Stashed changes
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+        <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -75,13 +89,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-<<<<<<< Updated upstream
-=======
+
     <list>
       <item itemvalue="Python.measures" />
       <item itemvalue="Python.main" />
     </list>
->>>>>>> Stashed changes
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
@@ -89,15 +101,13 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -160,7 +170,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="add reading data from owl and also from refalign(xml)." />
   </component>
   <component name="WindowStateProjectService">
-<<<<<<< Updated upstream
     <state width="1398" height="212" key="GridCell.Tab.0.bottom" timestamp="1579702733008">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
