@@ -35,3 +35,6 @@ if __name__ == '__main__':
     functionalPropSource = listOFPropertiesByThr(countPsource, DPsource, thr = 0.6)
 
     print(len(functionalPropSource.keys()))
+
+
+
