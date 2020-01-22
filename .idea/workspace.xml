@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="41ccde03-b025-4e7c-b53c-c404880ea390" name="Default Changelist" comment="add reading data from owl and also from refalign(xml).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refalign.py" beforeDir="false" afterPath="$PROJECT_DIR$/refalign.py" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,19 +20,18 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>http://oaei.ontologymatching.org/2010/IIMBDATA/en/kazakhstan</find>
-      <find>path</find>
-      <find>print</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WkAaE0oUr8E2w7F1rLe7qrjb5G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,9 +41,33 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+>>>>>>> 08dd090c4ec334ea89657b33cb5c8f27d5f4a327
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\PycharmProjects\Link-invalidation-project\.idea" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
+=======
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager" selected="Python.main">
+>>>>>>> Stashed changes
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Link_invalidation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -53,8 +80,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+        <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -63,6 +89,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+
+    <list>
+      <item itemvalue="Python.measures" />
+      <item itemvalue="Python.main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
@@ -70,15 +101,13 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -161,10 +190,69 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="221" y="73" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1579702440678" />
+=======
+    <state x="281" y="83" key="#Servers" timestamp="1579702941588">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="281" y="83" key="#Servers/0.23.1440.798@0.23.1440.798" timestamp="1579702941588" />
+    <state x="280" y="23" width="1071" height="699" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579703478439">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="280" y="23" width="1071" height="699" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.798@0.23.1440.798" timestamp="1579703478439" />
+    <state x="145" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.801@0.23.1440.801" timestamp="1579701643680" />
+    <state width="1379" height="191" key="GridCell.Tab.0.bottom" timestamp="1579703492499">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1379" height="191" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1579703492499" />
+    <state width="1379" height="237" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1579701645668" />
+    <state width="1379" height="191" key="GridCell.Tab.0.center" timestamp="1579703492498">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1379" height="191" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1579703492498" />
+    <state width="1379" height="237" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1579701645667" />
+    <state width="1379" height="191" key="GridCell.Tab.0.left" timestamp="1579703492497">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1379" height="191" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1579703492497" />
+    <state width="1379" height="237" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1579701645666" />
+    <state width="1379" height="191" key="GridCell.Tab.0.right" timestamp="1579703492498">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1379" height="191" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1579703492498" />
+    <state width="1379" height="237" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1579701645667" />
+    <state width="1379" height="237" key="GridCell.Tab.1.bottom" timestamp="1579703043409">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1379" height="237" key="GridCell.Tab.1.bottom/0.23.1440.798@0.23.1440.798" timestamp="1579703043409" />
+    <state width="1379" height="237" key="GridCell.Tab.1.bottom/0.23.1440.801@0.23.1440.801" timestamp="1579701645669" />
+    <state width="1379" height="237" key="GridCell.Tab.1.center" timestamp="1579703043408">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1379" height="237" key="GridCell.Tab.1.center/0.23.1440.798@0.23.1440.798" timestamp="1579703043408" />
+    <state width="1379" height="237" key="GridCell.Tab.1.center/0.23.1440.801@0.23.1440.801" timestamp="1579701645668" />
+    <state width="1379" height="237" key="GridCell.Tab.1.left" timestamp="1579703043408">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1379" height="237" key="GridCell.Tab.1.left/0.23.1440.798@0.23.1440.798" timestamp="1579703043408" />
+    <state width="1379" height="237" key="GridCell.Tab.1.left/0.23.1440.801@0.23.1440.801" timestamp="1579701645668" />
+    <state width="1379" height="237" key="GridCell.Tab.1.right" timestamp="1579703043408">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1379" height="237" key="GridCell.Tab.1.right/0.23.1440.798@0.23.1440.798" timestamp="1579703043408" />
+    <state width="1379" height="237" key="GridCell.Tab.1.right/0.23.1440.801@0.23.1440.801" timestamp="1579701645669" />
+    <state x="182" y="55" key="SettingsEditor" timestamp="1579702986962">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="182" y="55" key="SettingsEditor/0.23.1440.798@0.23.1440.798" timestamp="1579702986962" />
+>>>>>>> Stashed changes
     <state x="397" y="263" key="com.intellij.ide.util.TipDialog" timestamp="1579683285455">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="397" y="263" key="com.intellij.ide.util.TipDialog/0.23.1440.822@0.23.1440.822" timestamp="1579683285455" />
+    <state x="243" y="161" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1579701619781">
+      <screen x="0" y="23" width="1440" height="801" />
+    </state>
+    <state x="243" y="161" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.801@0.23.1440.801" timestamp="1579701619781" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Link_invalidation_project$main.coverage" NAME="main Coverage Results" MODIFIED="1579702725871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
