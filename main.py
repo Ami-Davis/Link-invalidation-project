@@ -28,5 +28,12 @@ if __name__ == '__main__':
 
     """
     # some test about how deal with triples that come from class Ontology:
-    for s, p, o in source.onto.triples((None, None, None)):
-        print("%s has a %s of %s" % (s, p, o))
+    s = source.rdfToDict()
+    iter = 0
+    for keys, values in s.items():
+        print(keys)
+        print(values)
+        print()
+        iter += 1
+        if iter==10:
+            break

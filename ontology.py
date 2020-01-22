@@ -38,7 +38,15 @@ class Ontology:
             objsList.append(obj)
         return list(set(objsList))
 
+    def rdfToDict(self):
+        subjsDict = {}
+        for s, p, o in self.onto.triples((None, None, None)):
+            if o == rdf.URIRef("http://www.w3.org/2002/07/owl#ObjectProperty"):
+                continue
+            if s not in subjsDict.keys():
+                subjsDict[s] = {}
+            if p not in subjsDict[s].keys():
+                subjsDict[s][p] = []
 
-
-
-
+            subjsDict[s][p].append(o)
+        return subjsDict
