@@ -21,14 +21,15 @@ def jaccard(list1, list2):
     return float(intersection) / union
 
 #for strings such as for the currency
-def jaccard_sim(str1, str2):
-    list1 = list(str1)
-    list2 = list(str2)
-    intersection = len(list(set(list1).intersection(list2)))
-    union = (len(list1) + len(list2)) - intersection
-    return float(intersection) / union
+def jaccard_sim(str1,str2):
+#   return textdistance.jaccard.normalized_similarity(a, b)
+    a = set(str1.split())
+    b = set(str2.split())
+    c = a.intersection(b)
+    return float(len(c)) / (len(a) + len(b) - len(c))
 
-print(jaccard_sim("abcd","abcd"))
+
+print("jaccard",jaccard_sim("USD ana are mere ","N4ZfD ana are mere albe"))
 #sim = similar(["dj ana ajd"],[ "dj ana ajd", ""])
 #print(sim)
 
@@ -115,6 +116,10 @@ def compare_ByLength(l1,l2):
         return 1
     return 0
 
+def compare_Equality(l1,l2):
+    if l1[0] == l2[0]:
+        return 1
+    return 0
 
 def compare_Names(l1,l2):
     l1[0] = changeName(l1[0])
