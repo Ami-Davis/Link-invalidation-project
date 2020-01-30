@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41ccde03-b025-4e7c-b53c-c404880ea390" name="Default Changelist" comment="add reading data from owl and also from refalign(xml).">
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +75,7 @@
       </file>
     </leaf>
   </component>
+
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -98,14 +99,14 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/refalign.py" />
       </list>
+
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
-  </component>
+  <component name="ProjectId" id="1WkAaE0oUr8E2w7F1rLe7qrjb5G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
@@ -175,6 +176,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+
       <recent name="C:\Users\DELL\PycharmProjects\Link-invalidation-project\.idea" />
     </key>
   </component>
@@ -192,6 +194,7 @@
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+
       <module name="Link_invalidation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -238,6 +241,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578317124588</updated>
+      <workItem from="1579683284281" duration="13296000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1578929111281</created>
@@ -318,6 +322,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
+
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test" />
@@ -325,6 +330,7 @@
     <MESSAGE value="add reading data from owl and also from refalign(xml)." />
     <option name="LAST_COMMIT_MESSAGE" value="add reading data from owl and also from refalign(xml)." />
   </component>
+
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/000/onto.owl">
       <provider selected="true" editor-type-id="text-editor">
@@ -367,5 +373,6 @@
         </state>
       </provider>
     </entry>
+
   </component>
 </project>
