@@ -1,18 +1,37 @@
 import textdistance
+import difflib
 
 def similar(a, b):
-    return SequenceMatcher(None, a, b).ratio()
+    return difflib.SequenceMatcher(None, a, b).ratio()
 
-def hamming_similarity(a,b):
+def hamming_similarity(l1,l2):
+    a = ''.join(l1)
+    b = ''.join(l2)
     return textdistance.hamming.normalized_similarity(a,b)
 
-def levenshtein_distance(a,b):
+def levenshtein_distance(l1,l2):
+    a = ''.join(l1)
+    b = ''.join(l2)
     return textdistance.levenshtein.normalized_similarity(a,b)
 
-def jaccard(a,b):
-    tokens_1 = a.split()
-    tokens_2 = b.split()
-    return textdistance(tokens_1, tokens_2)
+#for lists
+def jaccard(list1, list2):
+    intersection = len(list(set(list1).intersection(list2)))
+    union = (len(list1) + len(list2)) - intersection
+    return float(intersection) / union
+
+#for strings such as for the currency
+def jaccard_sim(str1,str2):
+#   return textdistance.jaccard.normalized_similarity(a, b)
+    a = set(str1.split())
+    b = set(str2.split())
+    c = a.intersection(b)
+    return float(len(c)) / (len(a) + len(b) - len(c))
+
+
+print("jaccard",jaccard_sim("USD ana are mere ","N4ZfD ana are mere albe"))
+#sim = similar(["dj ana ajd"],[ "dj ana ajd", ""])
+#print(sim)
 
 def changeMonth(month):
     switcher = {
@@ -39,8 +58,8 @@ def changeGender(gender):
         }
     return switcher.get(gender)
 
-a = changeGender("M")
-print(a)
+#a = changeGender("M")
+#print(a)
 
 def changeBirthDate(a):
     #May 26, 1913
@@ -55,37 +74,63 @@ def changeBirthDate(a):
 def changeReligion(religion):
     return religion.replace(" ","")
 
-rel = changeReligion("Roman Cha t o l ")
-print(rel)
+def changeName(name):
+    res = []
+    output = ""
+    splittedName = name.split()
+    for subname in splittedName:
+        res.append(subname[0])
+    for letter in res:
+        output = output + letter + '. '
+    return output.rstrip()
 
-date = changeBirthDate("May 26, 1913")
-print(date)
+#changeName("ana Maria Jacob H")
+
+#rel = changeReligion("Roman Cha t o l ")
+#print(rel)
+
+#date = changeBirthDate("May 26, 1913")
+#print(date)
 
 def compare_Birthdate(l1, l2):
     l2[0] = changeBirthDate(l2[0])
     if l1[0].strip() == l2[0].strip():
-        return True
-    return False
+        return 1
+    return 0
 
 def compare_Gender(l1, l2):
     l2[0] = changeGender(l2[0])
     if l1[0].strip() == l2[0].strip():
-        return True
-    return False
+        return 1
+    return 0
 
-def comapare_Religion(l1, l2):
+def compare_Religion(l1, l2):
     l2[0] = changeReligion(l2[0])
     l1[0] = changeReligion(l1[0])
     if l1[0].strip() == l2[0].strip():
-            return True
-    return False
+            return 1
+    return 0
 
-def compare_ActedBy(l1,l2):
+def compare_ByLength(l1,l2):
     if len(l1) == len(l2):
-        return True
-    return False
+        return 1
+    return 0
 
-print(compare_ActedBy([12,32,3],["aa",3,3]))
+def compare_Equality(l1,l2):
+    if l1[0] == l2[0]:
+        return 1
+    return 0
+
+def compare_Names(l1,l2):
+    l1[0] = changeName(l1[0])
+    if l1[0].rstrip() == l2[0].rstrip():
+        return 1
+    return 0
+
+def compareStrings(l1, l2):
+    return jaccard(l1,l2)
+
+#print(compare_ActedBy([12,32,3],["aa",3,3]))
 
 '''
 def compare(ont1, ont2):

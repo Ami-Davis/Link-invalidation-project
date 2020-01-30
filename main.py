@@ -2,11 +2,13 @@
 import pandas as pd
 import rdflib as rdf
 from ontology import Ontology
+
 from refalign import transformRefToTsv, addErrorToRefAlign
 from functional_properties import buildDictTofindFunctionalProperties,listOFPropertiesByThr
 
 
 TYPE = rdf.URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+
 
 
 if __name__ == '__main__':
@@ -16,6 +18,7 @@ if __name__ == '__main__':
     source = Ontology("data/000/onto.owl")
     target = Ontology("data/001/onto.owl")
     subjList = source.uniqueSubjects()
+
 
     if refalignrdfToTsv:
         transformRefToTsv("data/refalign.rdf")
@@ -37,7 +40,5 @@ if __name__ == '__main__':
     functionalPropSource = listOFPropertiesByThr(countPsource, DPsource, thr = 0.6)
 
     print(len(functionalPropSource.keys()))
-
-
 
 
