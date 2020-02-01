@@ -122,6 +122,8 @@ def compare_Equality(l1,l2):
     return 0
 
 def compare_Names(l1,l2):
+    if l1[0].rstrip() == l2[0].rstrip():
+        return 1
     l1[0] = changeName(l1[0])
     if l1[0].rstrip() == l2[0].rstrip():
         return 1
@@ -157,5 +159,3 @@ def compare(ont1, ont2):
                 if o.strip() == oo.strip():
                     print("r---------")
 '''
-
-

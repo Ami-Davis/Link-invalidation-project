@@ -1,6 +1,3 @@
-
-
-
 def buildDictTofindFunctionalProperties(rdfToDictProperty):
 
     dp  = {}
@@ -19,7 +16,7 @@ def buildDictTofindFunctionalProperties(rdfToDictProperty):
     return countP, dp
 
 
-def listOFPropertiesByThr(countP, dp, thr = 0.8):
+def listOFPropertiesByThr(countP, dp):
 
     propScore = {}
 
@@ -30,5 +27,3 @@ def listOFPropertiesByThr(countP, dp, thr = 0.8):
         propScore[prop] = score
 
     return propScore
-
-
