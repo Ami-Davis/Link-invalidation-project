@@ -21,19 +21,24 @@ class Comparing:
         # According to the property call the appropriate comparing function
         new_possible_twins = []
         for twin in possible_twins:
+
+            ele1 = [str(x) for x in self.source[element1][property]]
+            if property not in self.target[twin].keys():
+                continue
+            ele2 = [str(x) for x in self.target[twin][property]]
             if property.find('/date_of_birth') != -1:
-                comparing_result = measures.compare_Birthdate(self.source[element1][property], self.target[twin][property])
+                comparing_result = measures.compare_Birthdate(ele1, ele2)
             elif property.find('/gender') != -1:
-                comparing_result = measures.compare_Gender(self.source[element1][property], self.target[twin][property])
+                comparing_result = measures.compare_Gender(ele1, ele2)
             elif property.find('/acted_by') != -1 or property.find('/starring_in') != -1:
-                comparing_result = measures.compare_ByLength(self.source[element1][property], self.target[twin][property])
+                comparing_result = measures.compare_ByLength(ele1, ele2)
             elif property.find('/name') != -1:
-                comparing_result = measures.compare_Names(self.source[element1][property], self.target[twin][property])
+                comparing_result = measures.compare_Names(ele1, ele2)
             elif property.find('/article') != -1:
-                comparing_result = measures.compareStrings(self.source[element1][property], self.target[twin][property])
+                comparing_result = measures.compareStrings(ele1, ele2)
             elif property.find('/amount') != -1 or property.find('calling_code') != -1 or property.find('/size') != -1\
                     or property.find('/estimated_budget_used') != -1:
-                comparing_result = measures.compare_Equality(self.source[element1][property], self.target[twin][property])
+                comparing_result = measures.compare_Equality(ele1, ele2)
             else:
                 comparing_result = 0
             if comparing_result >= threshold:

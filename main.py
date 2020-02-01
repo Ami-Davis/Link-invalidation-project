@@ -14,7 +14,7 @@ if __name__ == '__main__':
 
     # some test about how deal with triples that come from class Ontology:
     s = source.rdfToDict()
-    t = source.rdfToDict()
+    t = target.rdfToDict()
     countPsource, DPsource = buildDictTofindFunctionalProperties(s)
 
     propScores = listOFPropertiesByThr(countPsource, DPsource)
@@ -22,3 +22,4 @@ if __name__ == '__main__':
     compare = Comparing(propScores, s, t)
     functionalProp = compare.create_functional_prop(threshold=0.8)
     twins = compare.find_twins(threshold=0.8)
+    print (twins)
