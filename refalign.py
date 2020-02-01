@@ -1,5 +1,5 @@
 from xml.dom import minidom
-import panda as pd
+import pandas as pd
 import random
 
 def transformRefToTsv(path):

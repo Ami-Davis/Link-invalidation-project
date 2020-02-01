@@ -11,6 +11,7 @@ class Comparing:
         self.target = onto2
 
     def create_functional_prop(self, threshold):
+        self.functional_prop = []
         self.threshold = threshold
         for property in self.scores.keys():
             if self.scores[property] >= threshold:
@@ -56,6 +57,6 @@ class Comparing:
             if len(possible_twins) == len(self.target.keys()):
                 continue
             for twin in possible_twins:
-                res.append((element1, twin))
+                res.append((str(element1), str(twin)))
 
         return res
