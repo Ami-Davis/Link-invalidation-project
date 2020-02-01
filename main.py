@@ -32,38 +32,24 @@ if __name__ == '__main__':
     precision = []
     recall = []
     fscore = []
-    thresholds = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+    thresholds = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
     i = 0
     for thr in thresholds:
         functionalProp = compare.create_functional_prop(threshold=thr)
         twins = compare.find_twins(threshold=thr)
         TP = 0.0
-        FP = 0.0
-        FN = 0.0
         for x, y in twins:
-            ok = True
             for xx, yy in trueSimilars:
                 if x == xx and y == yy:
-                    ok = False
                     TP += 1.0
-                elif x == xx:
-                    ok = False
-                    FP += 1.0
-            if ok:
-                FN += 1.0
-
-
+        len_twins = len(twins)
+        len_true = len(trueSimilars)
         print(TP)
-        print(FP)
-        print(FN)
-        if TP == 0.0 and FP == 0.0 and FN == 0.0:
-            precision.append(0.0)
-            recall.append(0.0)
-            fscore.append(0.0)
-            i += 1
-            continue
-        precision.append(TP / (TP + FP))
-        recall.append(TP / (TP + FN))
+        print(len(twins))
+        print(len(trueSimilars))
+
+        precision.append(TP / len_twins)
+        recall.append(TP / len_true)
         fscore.append(2 * (precision[i] * recall[i]) / (precision[i] + recall[i]))
         i += 1
 
